@@ -1,0 +1,11 @@
+{
+  "rules" : [
+
+  ],
+  "enabled" : false,
+  "name" : "百丽宫视频 解锁会员 1.8 A+",
+  "description" : "网页版地址 \nhttp:\/\/1.blg579.xyz\nhttp:\/\/163.xxx\n\n网球规则不能使用请使用Qx \n测试时间 2021.5.14 规则随时失效\n\nQx规则\n[rewrite_local]\n#百丽宫解锁VIP\n^http?:\\\/\\\/1\\.blg\\d{3}\\.xyz\\\/api\\\/(video\\\/index\\\/details|user\\\/profile\\\/index|user\\\/Profile\\\/index) url script-response-body blg.js\n\n[mitm]\nhostname = 1.blg\\d{3}.xyz\n\n\nvar body = $response.body;\nvar url = $request.url;\nvar obj = JSON.parse(body);\n\nconst p1 = '\/api\/video\/index\/details';\nconst p2 = '\/api\/user\/profile\/index';\nconst p3 = '\/api\/user\/Profile\/index'\n\n\n\nif (url.indexOf(p1) != -1) {\n\tobj.d.category.access = \"all\";\n     obj.d.watch_data.remaining_watch_time = 999;\n     obj.d.video.advertisement_status = \"N\";\n     obj.d.advertisement.top.target = \"N\";\n\tbody = JSON.stringify(obj);\n }\n\nif (url.indexOf(p2) != -1) {\n\tobj.d.user_is_member = \"Y\";\n     obj.d.user_is_agency = \"Y\";\n     obj.d.user_member_expire_time = 16179476940;\n\tbody = JSON.stringify(obj);\n }\n\nif (url.indexOf(p3) != -1) {\n\tobj.d.user_is_member = \"Y\";\n     obj.d.user_is_agency = \"Y\";\n     obj.d.user_download_count = 9999;\n     obj.d.user_tv_count = 9999;\n     obj.d.user_member_expire_time = 16179476940;\n\tbody = JSON.stringify(obj);\n }\n\n$done({body});\n",
+  "locations" : [
+
+  ]
+}

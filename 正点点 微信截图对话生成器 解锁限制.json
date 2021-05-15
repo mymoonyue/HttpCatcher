@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "true",
+      "matchValue" : "false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "正点点 微信截图对话生成器 解锁限制 A+",
+  "description" : "下载地址 https:\/\/apps.apple.com\/cn\/app\/%E6%AD%A3%E7%82%B9%E7%82%B9\/id1517006620\n\n商城搜名称",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "ws.lantin.me",
+      "path" : "\/api\/app\/userInfo"
+    }
+  ]
+}

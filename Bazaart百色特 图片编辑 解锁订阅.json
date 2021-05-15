@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n\"receipt\":{\"receipt_type\":\"Production\", \"adam_id\":515094775, \"app_item_id\":515094775, \"bundle_id\":\"co.bazaart.app\", \"application_version\":\"651\", \"download_id\":500352375780650495, \"version_external_identifier\":841696175, \"receipt_creation_date\":\"2021-05-09 16:13:00 Etc\/GMT\", \"receipt_creation_date_ms\":\"1620576780000\", \"receipt_creation_date_pst\":\"2021-05-09 09:13:00 America\/Los_Angeles\", \"request_date\":\"2021-05-09 16:13:03 Etc\/GMT\", \"request_date_ms\":\"1620576783556\", \"request_date_pst\":\"2021-05-09 09:13:03 America\/Los_Angeles\", \"original_purchase_date\":\"2021-05-09 16:09:25 Etc\/GMT\", \"original_purchase_date_ms\":\"1620576565000\", \"original_purchase_date_pst\":\"2021-05-09 09:09:25 America\/Los_Angeles\", \"original_application_version\":\"651\", \"in_app\":[\n{\"quantity\":\"1\", \"product_id\":\"Bazaart_Premium_Monthly_v10\", \"transaction_id\":\"730000633674219\", \"original_transaction_id\":\"730000633674219\", \"purchase_date\":\"2021-04-05 18:33:54 Etc\/GMT\", \"purchase_date_ms\":\"1617647634000\", \"purchase_date_pst\":\"2021-04-05 11:33:54 America\/Los_Angeles\", \"original_purchase_date\":\"2021-04-05 18:33:55 Etc\/GMT\", \"original_purchase_date_ms\":\"1617647635000\", \"original_purchase_date_pst\":\"2021-04-05 11:33:55 America\/Los_Angeles\", \"expires_date\":\"2099-09-09 20:12:02 Etc\/GMT\", \"expires_date_ms\":\"4092647115000\", \"expires_date_pst\":\"2099-09-09 12:12:02 America\/Los_Angeles\", \"web_order_line_item_id\":\"730000260339427\", \"is_trial_period\":\"false\", \"is_in_intro_offer_period\":\"false\", \"in_app_ownership_type\":\"PURCHASED\"}]}, \n\"latest_receipt_info\":[\n{\"quantity\":\"1\", \"product_id\":\"Bazaart_Premium_Monthly_v10\", \"transaction_id\":\"730000633674219\", \"original_transaction_id\":\"730000633674219\", \"purchase_date\":\"2021-04-05 18:33:54 Etc\/GMT\", \"purchase_date_ms\":\"1617647634000\", \"purchase_date_pst\":\"2021-04-05 11:33:54 America\/Los_Angeles\", \"original_purchase_date\":\"2021-04-05 18:33:55 Etc\/GMT\", \"original_purchase_date_ms\":\"1617647635000\", \"original_purchase_date_pst\":\"2021-04-05 11:33:55 America\/Los_Angeles\", \"expires_date\":\"2099-09-09 20:12:02 Etc\/GMT\", \"expires_date_ms\":\"4092647115000\", \"expires_date_pst\":\"2099-09-09 12:12:02 America\/Los_Angeles\", \"web_order_line_item_id\":\"730000260339427\", \"is_trial_period\":\"false\", \"is_in_intro_offer_period\":\"false\", \"in_app_ownership_type\":\"PURCHASED\", \"subscription_group_identifier\":\"20528284\"}], \n\"latest_receipt\":\"\", \n\"pending_renewal_info\":[\n{\"auto_renew_product_id\":\"Bazaart_Premium_Monthly_v10\", \"product_id\":\"Bazaart_Premium_Monthly_v10\", \"original_transaction_id\":\"730000633674219\", \"auto_renew_status\":\"0\"}], \"status\":0}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "Bazaart百色特 图片编辑 解锁订阅 A+",
+  "description" : "打开软件即可 不用恢复订阅\n\nBazaart百色特 - 图片编辑和设计工具，艺术修图应用 来自 Bazaart Ltd. https:\/\/apps.apple.com\/cn\/app\/bazaart%E7%99%BE%E8%89%B2%E7%89%B9-%E5%9B%BE%E7%89%87%E7%BC%96%E8%BE%91%E5%92%8C%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7-%E8%89%BA%E6%9C%AF%E4%BF%AE%E5%9B%BE%E5%BA%94%E7%94%A8\/id515094775",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "buy.itunes.apple.com",
+      "path" : "\/verifyReceipt"
+    }
+  ]
+}

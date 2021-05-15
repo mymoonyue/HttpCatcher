@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "encData\": \"TVJJTb0j7ShnWb7coMdrmM+2EyodIl37e8jPuh2G+huca4hUVKQ8+VbGSWOPQpRlEtAUCm8UEbPxHTrdBv4qbJYWEZNl80pr9gp+5nZQ8eYIyRolhn1beiwXfuY8Du8vmZlRyjtXMPx+gltaqISWIVTwf19065jJVtERZGmx6i5rD3lz2Dzg4HdlcBWqMwwQ+j+y+rv04X7BFFejYVF1+FR3F0ksV6xm06vWzfihl2YtyGwRBreBfgbqnRMz4YfPjMBhO\/qvOGw9B1\/UNlnuqh\/\/824BojRXX097LkVVANnDnvwQUEPYbVCnxtT7bXzwTf7ftJzBNH1yvRTNn0Z4iqzrW59V8U5E2HoLB06e9mba2xMoU1cUwblAc0nYsnKxzehz9VMDk\/vt6dAPm0Tph8EmwdmbA7vBpxOBAGRa+AQ649Q53YQvRKYGk4QE49Kcc4KLtU53yCSgTKvuL8cpebAr4SVmOiBCkyIrJgil7pPCD75uhEa9MlRiFDq8Rgut0zPL7sDwynwGzLiRUTTrJEyFAvvLuLUghqmddoY1NBbW0A1WZwaIZv5qDKZg08tohqqzK3zDT\/vUM5YEeQJteiohEJjLPu4lCd2f7GUAgj7V98ZsHFB\/SibTV90xGGrbOmTizlhBlL2Qd4CsY7qNvAJPpxzx8Bda04Ii09QK1UqS2w6ZSahK0JLhPzkz0TOcI03PhkvRrrL6LtFpu4UWcrzVtsP9u1f\/B8GAN4vMI4zQT0PBicZrLiUQr5tL1CADpCqXnurbsfuMSo\/uaFNGeC2A4CQ2d9Mz0rI5voGAnQzqij4WKeJgNlFdP8uAeVi+6WZkY9rha11xd8FlNskX7w==\"",
+      "matchValue" : "encData\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "陌陌视频p1 解锁限制 1.8 A+",
+  "description" : "下载地址 https:\/\/mmxbpr.xyz?p=CK5K6N\n下载地址 http:\/\/5mo.fun\/\n\n测试时间2021.5.14 规则随时失效\n不生效留意域名是否匹配\n\n\n提供未测试Qx规则\n\nhostname= *.moapi*.* 或 *\n\n#陌陌视频1\nhttps:\/\/api\\.moapi.+\\.* url script-response-body mmsp.js\n\nvar url = $request.url;\n\nconst u1 = '\/api\/user\/base\/info';\nconst u2 = '\/api\/video\/can\/watch';\n\nif (url.indexOf(u1) != -1) {\n\nbody = $response.body.replace(\/encData\":\".*?\"\/g, 'encData\": \"TVJJTb0j7ShnWb7coMdrmM+2EyodIl37e8jPuh2G+huca4hUVKQ8+VbGSWOPQpRlEtAUCm8UEbPxHTrdBv4qbJYWEZNl80pr9gp+5nZQ8eYIyRolhn1beiwXfuY8Du8vmZlRyjtXMPx+gltaqISWIVTwf19065jJVtERZGmx6i5rD3lz2Dzg4HdlcBWqMwwQ+j+y+rv04X7BFFejYVF1+FR3F0ksV6xm06vWzfihl2YtyGwRBreBfgbqnRMz4YfPjMBhO\/qvOGw9B1\/UNlnuqh\/\/824BojRXX097LkVVANnDnvwQUEPYbVCnxtT7bXzwTf7ftJzBNH1yvRTNn0Z4iqzrW59V8U5E2HoLB06e9mba2xMoU1cUwblAc0nYsnKxzehz9VMDk\/vt6dAPm0Tph8EmwdmbA7vBpxOBAGRa+AQ649Q53YQvRKYGk4QE49Kcc4KLtU53yCSgTKvuL8cpebAr4SVmOiBCkyIrJgil7pPCD75uhEa9MlRiFDq8Rgut0zPL7sDwynwGzLiRUTTrJEyFAvvLuLUghqmddoY1NBbW0A1WZwaIZv5qDKZg08tohqqzK3zDT\/vUM5YEeQJteiohEJjLPu4lCd2f7GUAgj7V98ZsHFB\/SibTV90xGGrbOmTizlhBlL2Qd4CsY7qNvAJPpxzx8Bda04Ii09QK1UqS2w6ZSahK0JLhPzkz0TOcI03PhkvRrrL6LtFpu4UWcrzVtsP9u1f\/B8GAN4vMI4zQT0PBicZrLiUQr5tL1CADpCqXnurbsfuMSo\/uaFNGeC2A4CQ2d9Mz0rI5voGAnQzqij4WKeJgNlFdP8uAeVi+6WZkY9rha11xd8FlNskX7w==\"');\n$done({body});\n\n}else if (url.indexOf(u2) != -1) {\n\nbody = $response.body.replace(\/encData\":\".*?\"\/g, 'encData\": \"tn7YgOJEDztxLt13qpqC7WV2U3HmczD6XQRanb2lIDfYo7s7G6rzcB6QVQC623iuNLL6tprLaPApvYyMFRGajkLOQCt\/5K42uqy9inTHThq3JJ\/y\/B2UCFMTpIEEiefr\"');\n$done({body});\n\n}\n\n\n\n\n\n#陌陌视频2\n\nhttps:\/\/api\\.moapi1\\.online\/api\/video\/getVideoById?* url script-request-header mmsp2.js\n\n\n\n$done({Authorization: \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzMzE5MDM0IiwiaXNzIjoiIiwiaWF0IjoxNjE4NTg3NjE4LCJuYmYiOjE2MTg1ODc2MTgsImV4cCI6MTc3NjI2NzYxOH0.hF3I7ONOVWUUu8N3CzH-qXzqbMFJA6QXMshilciWpWk\"});",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.moapi*.*",
+      "path" : "\/api\/user\/base\/info"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bdawnvr.*",
+      "path" : "\/api\/user\/base\/info"
+    }
+  ]
+}

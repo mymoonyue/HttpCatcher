@@ -1,0 +1,45 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "  \"is_vip\": 1",
+      "matchValue" : "\"is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "pay_status\": \"free\"",
+      "matchValue" : "pay_status\":\"unpay\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "面包FM 解锁会员 A+",
+  "description" : "面包FM-赘婿有声小说听书阅读神器 来自 中广影音(北京)文化传媒有限公司 https:\/\/apps.apple.com\/cn\/app\/%E9%9D%A2%E5%8C%85fm-%E8%B5%98%E5%A9%BF%E6%9C%89%E5%A3%B0%E5%B0%8F%E8%AF%B4%E5%90%AC%E4%B9%A6%E9%98%85%E8%AF%BB%E7%A5%9E%E5%99%A8\/id1406687423",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "wx.voxpie.com",
+      "path" : "\/api\/fmapp_user"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "wx.voxpie.com",
+      "path" : "\/api\/fmapp_bookinfo"
+    }
+  ]
+}
